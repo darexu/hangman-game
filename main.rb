@@ -7,6 +7,7 @@ if (Gem.win_platform?)
   end
 end
 
+require 'colorize'
 require_relative 'lib/console_interface'
 require_relative 'lib/game'
 

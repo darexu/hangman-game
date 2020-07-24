@@ -12,7 +12,7 @@ class ConsoleInterface
     puts <<~END
       Слово: #{word_to_show}
       #{figure}
-      Ошибки (#{@game.errors_made}): #{errors_to_show}
+      Ошибки (#{@game.errors_made}): #{errors_to_show.colorize(:red)}
       У вас осталось ошибок: #{@game.errors_allowed}
     END
 

@@ -48,10 +48,20 @@
 
 ![Demo](https://raw.githubusercontent.com/darexu/hangman-game/master/data/demo.gif "Пример игры")
 
-## Запуск
-Для запуска выполните команду
+## Установка
+Скопируйте репозиторий
 ```sh
-$ ruby main.rb
+git clone git@github.com:darexu/hangman-game.git
 ```
+## Запуск
+1. Перейдите в консоле в папку с игрой
+2. Установите нужные гемы командой
+    ```sh
+    $ bundle install
+    ```
+3. Для запуска выполните команду
+    ```sh
+    $ bundle exec ruby main.rb
+    ```
 ## Добавление слов
 Для добавления слов добавте слова в файл `hangman-game/data/words.txt`, каждое слово на новой строке.
