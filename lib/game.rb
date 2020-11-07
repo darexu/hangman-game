@@ -20,12 +20,11 @@ class Game
   end
 
   def letters_to_guess
-    result =
-      @letters.map do |letter| # Берем массив букв из слова [Ё, Ж, И, К]
-        if normalized_letters(@user_guesses).include?(normalize_letter(letter)) # Если буква уже вводилась
-          letter # возвращаем букву, иначе __
-        end
+    @letters.map do |letter| # Берем массив букв из слова [Ё, Ж, И, К]
+      if normalized_letters(@user_guesses).include?(normalize_letter(letter)) # Если буква уже вводилась
+        letter # возвращаем букву, иначе __
       end
+    end
   end
 
   def lost? # 4 Проверяем проиграна ли
